@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/newyorklogo.jpg"/>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+  <title>Contact Form</title>
+</head>
+<body>
+    <div class="page-container">
+    <div class="content-wrap-games">
+        <div class="skip"><a href=#skip>Skip to Main Content</a></div>
+        <header>
+            <h1>New York Sports</h1>
+            <nav>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="teams.html">Teams</a></li>
+                <li class="nav_item"><a href="stadiums.html">Stadiums</a></li>
+                <li class="nav_item"><a href="players.html">Players</a></li>
+                <li class="nav_item"><a href="games.html">Games</a></li>
+                <li class="nav_item"><a class = "current" href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+</header>
+<main id="skip" class="contact">
+ <form action="https://formspree.io/f/mgergrzk" method="post">
+  <fieldset>
+    <legend>Contact Form</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+    <label for="email_id">Your Email</label>
+    <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+    <label for="msg">Leave A Message</label>
+
+    <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <label for ="cBox">Remember me</label>
+
+    <input type="submit" value = "Contact Me">
+  </fieldset>
+ </form>
+</main>
+ <footer id="contact-footer">
+  <p>University of Michigan School of Information<br>
+  Ben Dinhofer
+</p>
+</footer>
+</body>
+</html>

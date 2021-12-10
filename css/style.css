@@ -1,0 +1,920 @@
+body{
+    background-color: #DBE4EE;
+}
+
+p{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:"Adamina";
+}
+
+.skip a{
+    background-color: black;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    color:white;
+}
+
+.skip a:focus{
+    position: absolute;     
+    top: 0%;
+    color:white;
+  }
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DBE4EE;
+    border-bottom: 5px solid #81A4CD;
+}
+
+img{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+nav ul{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+nav li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:#054A91;
+    font-size: 17px;
+    font-family: "Adamina";
+}
+
+nav li a:hover{
+    color: #F17300;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav li a:focus{
+    color: #F17300;
+    text-decoration: none;
+    font-size:25px;
+}
+
+.nav li a:visited{
+    color:#054A91;
+}
+
+.current{
+    font-size:25px;
+    color:#054A91;
+    text-decoration:underline;
+    text-decoration-color: #F17300;
+}
+
+h1{
+    font-size:45px;
+    font-family: "Abril Fatface";
+    color: #054A91;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color:#F17300;
+}
+
+h2{
+    font-size:30px;
+    font-family: "Abril Fatface";
+    color:#054A91;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: underline #F17300;
+}
+
+h3{
+    font-size:25px;
+    color:#054A91;
+    text-align: center;
+    padding: 8px;
+}
+
+img.team-pic{
+    border: 2px solid #054A91;
+    border-radius: 20px;
+    margin-top: 10px;
+    max-height:275px;
+    max-width:400px;
+}
+
+.team-pic-div{ 
+     text-align: center; 
+ } 
+
+footer{
+    background-color:#054A91;
+    color:#DBE4EE;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+}
+
+#contact-footer{
+    background-color:#054A91;
+    color:#DBE4EE;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.player-pic-div{
+    text-align: center;
+}
+
+img.player-pic{
+    border: 2px solid #054A91;
+    border-radius: 20px;
+    margin-top: 10px;
+    height:175px;
+    width:175px;
+    filter: sepia(60%); 
+    
+}
+
+img.player-pic:hover{
+    border: 6px solid #054A91;
+    width: 225px;
+    height: 225px;
+    filter: drop-shadow(10px 10px 10px #f17300) 
+}
+
+img.player-pic:focus{
+    border: 6px solid #054A91;
+    width: 225px;
+    height: 225px;
+    filter: drop-shadow(10px 10px 10px #f17300)
+}
+
+.player-text{
+    padding-top: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.player-text:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 3px dashed #81A4CD; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.description{
+    padding-top: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+a.game-link{
+    text-decoration: none;
+    color:#054A91;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a:hover, a:focus{
+    font-size: 20px;
+    color:#F17300;
+    text-decoration: underline;
+}
+
+a.game-link:hover{
+    color:white;
+    font-size: 30px;
+}
+
+a.game-link:focus{
+    color:white;
+    font-size: 30px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-row-gap: 20px; 
+    justify-content: center;
+}
+
+.knicks-stadium{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#msg-pic{
+    grid-row:2
+}
+
+#msg-text{
+    grid-row: 3
+}
+
+#knicks-stadium-border{
+    grid-row: 4;
+}
+
+.giants-stadium{
+    grid-row: 5;
+}
+
+#metlife-pic{
+    grid-row:6;
+}
+
+#metlife-text{
+    grid-row:7;
+}
+
+#giants-stadium-border{
+    grid-row:8;
+}
+
+.isles-stadium{
+    grid-row: 9;
+}
+
+#ubs-pic{
+    grid-row: 10;
+}
+
+#ubs-text{
+    grid-row:11;
+}
+
+#isles-stadium-border{
+    grid-row:12;
+}
+
+.stadium-border{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 90%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px double #F17300; 
+}
+
+ul.stadium-list{
+    list-style: square inside;
+    text-align: center;
+    display: block;
+}
+
+.stadium-list li{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.stadium-text{
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: 5px solid #054A91;
+    background-color:#81A4CD;
+    color:#001233;
+}
+
+.team-outlook{
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: 5px solid #054A91;
+    background-color:#81A4CD;
+    color: #001233;
+}
+
+.stadium-text h3{
+    text-decoration: underline;
+    color:#001233;
+}
+
+img.stadium-pic{
+    border-radius: 20px;
+    height:250px;
+    width:400px;  
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 400px;
+    height: 250px;
+    border: 2px solid #054A91;
+    border-radius: 20px; 
+    margin: auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+.flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg)
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-card-front {
+    background-color:#DBE4EE;
+    color: black;
+  }
+
+.flip-card-back {
+  background-color: #81A4CD;
+  color:#001233;
+  transform: rotateY(180deg);
+}
+
+.stats{
+    font-size: 30px;
+    color: #001233;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.game{
+    border: 5px solid #054A91;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #81A4CD;
+    color: #001233;
+}
+
+.game h3, .game h2{
+    color:#001233;
+    text-decoration: underline;
+}
+  
+legend{ 
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #054A91;
+    text-decoration: underline;
+    text-decoration-color: #F17300;
+    font-style: italic;
+  }
+  
+label{
+    background-color: #DBE4EE;
+    display: inline-block;
+    font-size: 25px;
+    color: #054A91;
+    border: 2px solid #F17300;
+    border-radius: 10px;
+  }
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #F17300;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: 80%; 
+  }
+span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+  }
+  
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #F17300;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: 80%; 
+  }
+  
+  
+input[type=checkbox]{
+      display:inline;
+      width: inherit;
+  }
+  
+input[type=submit] {
+    background-color: #81A4CD;
+    color:#001233;
+    padding: 14px 20px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius:20px;
+    opacity: 100%;
+  }
+  
+input[type=submit]:hover {
+    border: 4px solid #054A91;
+    font-weight: bold;
+    opacity: 100%;
+  }
+
+.contact{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 660px; /* Parallax effect */
+    background-image: url('../images/nyc-skyline.jpg');
+    margin: 0 auto; /* This will center the border. */
+    width: 90%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@media screen and (min-width: 800px){
+    .container1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-row-gap:10px;
+    }
+
+    .team1{
+        grid-column:1/3;
+        grid-row:1;
+    }
+
+    #knicks-pic{
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    #knicks-outlook{
+        grid-column: 2;
+        grid-row:2;
+    }
+
+    #knicks-team-border{
+        grid-column: 1/3;
+        grid-row:3
+    }
+
+    .team2{
+        grid-column: 1/3;
+        grid-row:4;
+    }
+
+    #giants-pic{
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    #giant-outlook{
+        grid-column:1;
+        grid-row:5;
+    }
+
+    #giants-team-border{
+        grid-column:1/3;
+        grid-row:6;
+    }
+
+    .team3{
+        grid-column:1/3;
+        grid-row:7;
+    }
+
+    #isles-pic{
+        grid-column: 1;
+        grid-row: 8;
+    }
+
+    #isles-outlook{
+        grid-column:2;
+        grid-row:8;
+    }
+
+    #isles-team-border{
+        grid-column:1/3;
+        grid-row:9;
+    }
+
+    .team-outlook:after {
+        border-bottom: None; 
+    }
+
+    .team-pic-div{
+        margin-top: 10%;
+    }
+
+    img.team-pic{
+        margin-top: 15%;
+    }
+
+    .container2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, auto);
+    }
+
+    .knicks-stadium{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    
+    #msg-pic{
+        grid-column: 1;
+        grid-row:2;
+    }
+    
+    #msg-text{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #knicks-stadium-border{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    
+    .giants-stadium{
+        grid-column: 1/3;
+        grid-row: 4;
+    }
+    
+    #metlife-pic{
+        grid-column: 2;
+        grid-row:5;
+    }
+    
+    #metlife-text{
+        grid-column: 1;
+        grid-row:5;
+    }
+
+    #giants-stadium-border{
+        grid-column:1/3;
+        grid-row:6;
+    }
+    
+    .isles-stadium{
+        grid-column: 1/3;
+        grid-row: 7;
+    }
+    
+    #ubs-pic{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    
+    #ubs-text{
+        grid-column:2;
+        grid-row:8;
+    }
+
+    #isles-stadium-border{
+        grid-column:1/3;
+        grid-row:9;
+    }
+
+    .stadium-text:after {
+        border: none;
+    }
+
+    h2{
+        font-size:35px;
+    }
+
+    h3{
+        font-size:30px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    #knicks-players{ 
+        display: flex; 
+        justify-content: center; 
+        align-items: baseline;
+     } 
+
+    #giants-players{ 
+        display: flex; 
+        justify-content: center;
+        align-items: baseline;
+     } 
+
+    #isles-players{ 
+        display: flex; 
+        justify-content: center;
+        align-items: baseline;
+     }
+    
+    .player{
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .player-text:after {
+        border-bottom: none; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    .team-players{
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 90%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 10px double #F17300; /* This creates the border. Replace black with whatever color you want. */ 
+    }
+
+    .container4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    #knicks-game{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #giants-game{
+        grid-column: 1/3;
+        grid-row: 2;
+        height: auto;
+    }
+
+    #isles-game{
+        grid-column: 2;
+        grid-row: 1/2;
+    }
+
+    .description:after {
+        border-bottom: None; 
+    }
+
+    a.game-link{
+        font-size: 30px;
+    }
+
+    footer p{
+        font-size: 100%;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    nav li a{
+        font-size: 20px;
+    }
+
+    nav li a:focus, nav li a:hover{
+        font-size:28;
+    }
+
+    .current{
+        font-size:28px;
+    }
+    
+    a:hover, a:focus{
+        font-size: 23px;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+    img.team-pic{
+        margin-top: 10px;
+    }
+
+    .container4{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1;
+        align-items: start;
+    }
+
+    #knicks-game{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #giants-game{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #isles-game{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .game{
+        min-height: 475px;
+        /* max-height: 700px; */
+    }
+
+    .description:after {
+        border-bottom: None; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    .flip-card {
+        height: 300px;
+        width: 500px;
+    }
+
+    .flip-card-inner{
+        height: 100%;
+        width: 100%;
+    }
+
+    .flip-card-front, .flip-card-back{
+        height: 100%;
+        width: 100%;
+    }
+
+    img.stadium-pic{
+        height: 300px;
+        width: 500px;
+    }
+
+    .container1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8 auto);
+    }
+
+    .team1{
+        grid-column:1;
+        grid-row:1;
+    }
+
+    #knicks-pic{
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    #knicks-outlook{
+        grid-column: 1;
+        grid-row:3;
+    }
+
+    #knicks-team-border{
+        grid-column: 1/3;
+        grid-row:4
+    }
+
+    .team2{
+        grid-column: 2;
+        grid-row:1;
+    }
+
+    #giants-pic{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #giant-outlook{
+        grid-column:2;
+        grid-row:3;
+    }
+
+    #giants-team-border{
+        grid-column: 1/4;
+        grid-row:4;
+        border: none;
+    }
+
+    .team3{
+        grid-column:1/3;
+        grid-row:5;
+    }
+
+    #isles-pic{
+        grid-column: 1/3;
+        grid-row: 6;
+    }
+
+    #isles-outlook{
+        grid-column:1/3;
+        grid-row:7;
+    }
+
+    #isles-team-border{
+        grid-column:1/3;
+        grid-row:8;
+    }
+
+    .team-pic-div{
+        margin-top: 0;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2 auto);
+    }
+
+    h1{
+        grid-column: 2;
+        grid-row:1;
+    }
+
+    nav{
+        grid-column: 1/4;
+        grid-row: 2;
+        margin-right: 75px;
+    }
+
+    nav li{
+        padding-left: 75px;
+    }
+
+    nav li a{
+        font-size: 25px;
+    }
+
+    nav li a:focus, nav li a:hover{
+        font-size:30px;
+    }
+
+    .current{
+        font-size:30px;
+    }
+
+    .games-footer{
+        margin-top: 2%;
+    }
+
+
+
+}
+
+@media all and (prefers-reduced-motion:reduce){
+	img{
+	transition: none;
+	animation: none;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: none;
+        transform-style: none;
+    }
+
+    .flip-card:hover .flip-card-inner{
+        z-index: -1;
+    }
+
+    .contact{
+        background-attachment: scroll;
+    }
+}
